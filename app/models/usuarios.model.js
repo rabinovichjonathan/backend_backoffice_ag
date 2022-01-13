@@ -1,15 +1,18 @@
 module.exports = (sequelize, Sequelize) => {
-    const categorias = sequelize.define("categorias", {
-      categoria_id: {
+    const usuarios = sequelize.define("usuarios_back", {
+      usuario_id: {
         type: Sequelize.INTEGER,
         primaryKey: true,
         autoIncrement: true
       },
 
-      categoria: {
+      usuario: {
+        type: Sequelize.STRING
+      },
+      clave: {
         type: Sequelize.STRING
       }
     });
   
-    return categorias;
+    return usuarios;
   };

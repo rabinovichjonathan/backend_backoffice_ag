@@ -23,6 +23,8 @@ app.get("/", (req, res) => {
 });
 db.sequelize.sync();
 require("./app/routes/categorias.routes")(app);
+require("./app/routes/productos.routes")(app);
+require("./app/routes/usuarios.routes")(app);
 
 // set port, listen for requests
 const PORT = process.env.PORT || 8082;
