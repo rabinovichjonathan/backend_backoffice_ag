@@ -6,7 +6,7 @@ const db = require("./app/models");
 const app = express();
 
 var corsOptions = {
-  origin: "http://backofficeag.herokuapp.com/"
+  origin: "http://backofficeag.herokuapp.com"
 };
 
 app.use(cors(corsOptions));
